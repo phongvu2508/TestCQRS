@@ -1,0 +1,14 @@
+C:\Working\Samples\TestCQRSProject\TestCQRSProject\bin\Debug\netcoreapp2.1\TestCQRSProject.deps.json
+C:\Working\Samples\TestCQRSProject\TestCQRSProject\bin\Debug\netcoreapp2.1\TestCQRSProject.runtimeconfig.json
+C:\Working\Samples\TestCQRSProject\TestCQRSProject\bin\Debug\netcoreapp2.1\TestCQRSProject.runtimeconfig.dev.json
+C:\Working\Samples\TestCQRSProject\TestCQRSProject\bin\Debug\netcoreapp2.1\TestCQRSProject.dll
+C:\Working\Samples\TestCQRSProject\TestCQRSProject\obj\Debug\netcoreapp2.1\TestCQRSProject.csprojAssemblyReference.cache
+C:\Working\Samples\TestCQRSProject\TestCQRSProject\obj\Debug\netcoreapp2.1\TestCQRSProject.csproj.CoreCompileInputs.cache
+C:\Working\Samples\TestCQRSProject\TestCQRSProject\obj\Debug\netcoreapp2.1\TestCQRSProject.RazorAssemblyInfo.cache
+C:\Working\Samples\TestCQRSProject\TestCQRSProject\obj\Debug\netcoreapp2.1\TestCQRSProject.RazorAssemblyInfo.cs
+C:\Working\Samples\TestCQRSProject\TestCQRSProject\obj\Debug\netcoreapp2.1\TestCQRSProject.AssemblyInfoInputs.cache
+C:\Working\Samples\TestCQRSProject\TestCQRSProject\obj\Debug\netcoreapp2.1\TestCQRSProject.AssemblyInfo.cs
+C:\Working\Samples\TestCQRSProject\TestCQRSProject\obj\Debug\netcoreapp2.1\TestCQRSProject.RazorTargetAssemblyInfo.cache
+C:\Working\Samples\TestCQRSProject\TestCQRSProject\bin\Debug\netcoreapp2.1\TestCQRSProject.pdb
+C:\Working\Samples\TestCQRSProject\TestCQRSProject\obj\Debug\netcoreapp2.1\TestCQRSProject.dll
+C:\Working\Samples\TestCQRSProject\TestCQRSProject\obj\Debug\netcoreapp2.1\TestCQRSProject.pdb
