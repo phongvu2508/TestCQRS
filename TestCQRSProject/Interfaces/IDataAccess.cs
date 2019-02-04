@@ -7,6 +7,6 @@ namespace TestCQRSProject.Interfaces
 {
     public interface IDataAccess
     {
-        string ExecuteProc(string procName);
+        Task<string> ExecuteProc(string procName);
     }
 }

@@ -32,7 +32,7 @@ namespace TestCQRSProject.Locations.Commands
         public async Task<LocationDTO> Handle(CreateLocationCommand request, CancellationToken cancellationToken)
         {
             // Get data from data access layer
-            var result = _dataAccess.ExecuteProc("SomeProc");
+            var result = await _dataAccess.ExecuteProc("CreateLocationProc");
 
             // Location provider will create ILocation
             var location = _locationProvider.CreateLocation(result);
@@ -44,9 +44,7 @@ namespace TestCQRSProject.Locations.Commands
             var locationDTO = new LocationDTO();
             locationDTO.Location = location;
             locationDTO.Result = true;
-
-            await Task.Delay(1000);
-
+            
             return locationDTO;
         }
     }

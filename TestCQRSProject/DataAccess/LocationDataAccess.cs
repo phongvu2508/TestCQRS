@@ -8,8 +8,10 @@ namespace TestCQRSProject.DataAccess
 {
     public class LocationDataAccess : IDataAccess
     {
-        public string ExecuteProc(string procName)
+        public async Task<string> ExecuteProc(string procName)
         {
+            await Task.Delay(1000);
+
             return "something";
         }
     }

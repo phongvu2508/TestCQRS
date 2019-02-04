@@ -19,6 +19,7 @@ using TestCQRSProject.Services;
 using TestCQRSProject.Providers;
 using TestCQRSProject.Locations.Models;
 using TestCQRSProject.DataAccess;
+using TestCQRSProject.Infrastructure;
 
 namespace TestCQRSProject
 {
@@ -36,6 +37,10 @@ namespace TestCQRSProject
         {
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
 
+            // Add MediatR
+            services.AddTransient(typeof(IPipelineBehavior<,>), typeof(RequestPreProcessorBehavior<,>));
+            services.AddTransient(typeof(IPipelineBehavior<,>), typeof(RequestPerformanceBehaviour<,>));
+            services.AddTransient(typeof(IPipelineBehavior<,>), typeof(RequestValidationBehavior<,>));
             services.AddMediatR();
             services.AddMediatR(typeof(CreateLocationCommandHandler).GetTypeInfo().Assembly);
 
