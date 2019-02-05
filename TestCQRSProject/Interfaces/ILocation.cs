@@ -7,6 +7,7 @@ namespace TestCQRSProject.Interfaces
 {
     public interface ILocation
     {
+        int Id { get; set; }
         string Name { get; set; }
         string Description { get; set; }
     }

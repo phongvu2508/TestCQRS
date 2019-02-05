@@ -10,7 +10,7 @@ namespace TestCQRSProject.DataAccess
     {
         public async Task<string> ExecuteProc(string procName)
         {
-            await Task.Delay(1000);
+            await Task.Delay(1);
 
             return "something";
         }

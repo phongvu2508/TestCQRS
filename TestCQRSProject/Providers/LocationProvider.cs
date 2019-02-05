@@ -12,6 +12,7 @@ namespace TestCQRSProject.Providers
         public ILocation CreateLocation(string name)
         {
             var location = new Location();
+            location.Id = 1234;
             location.Name = name;
             location.Description = "yeah";
             return location;

@@ -7,6 +7,7 @@ using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using TestCQRSProject.Locations.Commands;
 using TestCQRSProject.Locations.Models;
+using TestCQRSProject.Locations.Notifications;
 using TestCQRSProject.Locations.Queries;
 
 namespace TestCQRSProject.Controllers
@@ -34,13 +35,21 @@ namespace TestCQRSProject.Controllers
 
         // POST api/location?name=haha&description=hihi
         [HttpPost]
-        public async void CreateLocation(string name, string description)
+        public async Task CreateLocation(string name, string description)
         {
             var command = new CreateLocationCommand();
             command.Name = name;
             command.Description = description;
-
+            
             var result = await _mediator.Send<LocationDTO>(command);
+
+            if (result.Result)
+            {
+                var notification = new LocationCreatedModel();
+                notification.Id = result.Location.Id;
+
+                await _mediator.Publish<LocationCreatedModel>(notification);
+            }
         }
     }
 }
