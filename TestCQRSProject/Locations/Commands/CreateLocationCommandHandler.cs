@@ -35,12 +35,15 @@ namespace TestCQRSProject.Locations.Commands
             var result = await _dataAccess.ExecuteProc("CreateLocationProc");
 
             // Location provider will create ILocation
+            // TODO: This will be inject into DataAccess
             var location = _locationProvider.CreateLocation(result);
 
             // Call Service to process any business rules if needed
+            // TODO: Use MediatR to trigger service to process the needed rule, don't need to request directly.
             var res = _locationService.ProcessRules(location);
 
             // Create DTO
+            // TODO: potential move this to another DTO Provider if the creation is complex enough
             var locationDTO = new LocationDTO();
             locationDTO.Location = location;
             locationDTO.Result = true;

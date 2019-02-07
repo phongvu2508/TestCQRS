@@ -13,7 +13,7 @@ namespace TestCQRSProject.Locations.Notifications
     {
         public Task Handle(LocationCreatedModel notification, CancellationToken cancellationToken)
         {
-            Debug.WriteLine("Second handler processing here");
+            Debug.WriteLine("Second handler trigger some background jobs, tasks...");
             return Task.CompletedTask;
         }
     }

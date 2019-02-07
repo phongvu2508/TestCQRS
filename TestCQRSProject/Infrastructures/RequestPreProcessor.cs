@@ -20,7 +20,7 @@ namespace TestCQRSProject.Infrastructure
 
             // TODO: Add User Details
 
-            _logger.LogInformation("API Request: {Name} {@Request}", name, request);
+            _logger.LogInformation("Start API Request: {Name} {@Request}", name, request);
 
             return Task.CompletedTask;
         }
